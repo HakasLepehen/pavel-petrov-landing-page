@@ -1,1 +1,0 @@
-# pavel-petrov-landing-page
