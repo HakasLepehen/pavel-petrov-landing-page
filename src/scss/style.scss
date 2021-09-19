@@ -1,9 +1,9 @@
 @import "normalize.css";
-@import 'colors.scss';
-@import 'header.scss';
-@import 'greetings.scss';
-@import 'posts.scss';
-@import 'works.scss';
+@import './colors.scss';
+@import './header.scss';
+@import './greetings.scss';
+@import './posts.scss';
+@import './works.scss';
 
 
 
@@ -18,12 +18,16 @@
 }
 
 .wrapper {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .container {
   background-color: $secondary;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 950px;
+  padding: 0 15px;
   height: 100vh;
 }
