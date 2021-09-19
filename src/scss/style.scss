@@ -1,9 +1,11 @@
 @import "normalize.css";
+@import 'colors.scss';
+@import 'header.scss';
+@import 'greetings.scss';
+@import 'posts.scss';
+@import 'works.scss';
 
-$primary: #ff6464;
-$secondary: #00a8cc;
-$dark: #21243d;
-$light: #8695a4;
+
 
 *,
 *::before,
