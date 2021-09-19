@@ -1,1 +1,27 @@
-@import 'normalize.css';
+@import "normalize.css";
+
+$primary: #ff6464;
+$secondary: #00a8cc;
+$dark: #21243d;
+$light: #8695a4;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: $dark;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  background-color: $secondary;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 100vh;
+}

@@ -26,13 +26,13 @@ module.exports = {
   devtool: "inline-source-map",
 
   devServer: {
-    contentBase: path.join(__dirname, 'app'),
-    port: 3000
+    contentBase: path.join(__dirname, "app"),
+    port: 3000,
   },
 
   plugins: [
     new HTMLWebpackPlugin({
-      title: "My App",
+      title: "Pavel Petrov landing page",
       template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       minify: {
@@ -61,6 +61,9 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
+          {
+            loader: "postcss-loader",
+          },
         ],
       },
       {
