@@ -5,29 +5,33 @@
 @import './posts.scss';
 @import './works.scss';
 
-
+@font-face {
+  font-family: 'heeboregular';
+  src: url('../fonts/Heebo/heebo.woff2') format('woff2'),
+       url('../fonts/Heebo/heebo.woff') format('woff');
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   color: $dark;
+  font-family: 'heeboregular', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 23px;
   text-decoration: none;
 }
 
 .wrapper {
   max-width: 1180px;
-  padding: 0 15px;
   margin: 0 auto;
   overflow: hidden;
+  height: 200vh;
 }
 
 .container {
-  background-color: $secondary;
   margin: 0 auto;
   max-width: 950px;
   padding: 0 15px;
-  height: 100vh;
 }
