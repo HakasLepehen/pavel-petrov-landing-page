@@ -6,7 +6,6 @@ _
 .DS_Store
 
 /dist
-/app
 
 # Logs
 logs
