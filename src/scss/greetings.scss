@@ -1,0 +1,27 @@
+.greetings {
+  &__block {
+  }
+}
+
+.block {
+  &__img {
+  }
+
+  &__text {
+  }
+
+  &__title {
+    & > h1 {
+      font-size: 44px;
+      line-height: 60px;
+      margin: 0;
+    }
+  }
+
+  &__description {
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
