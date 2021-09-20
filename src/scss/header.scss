@@ -39,18 +39,15 @@
 }
 
 @media (max-width: 579px) {
+  body {
+    overflow: hidden;
+  }
+  
   .header {
     padding: 20px 30px 20px 30px;
-    &__body {
-    //     // display: block;
-    //     position: absolute;
-    //   width: 100vw;
-    //   left: 0;
-    }
 
     &__menu {
       display: none;
-    //   display: block;
       top: 0;
       position: fixed;
       left: 0;
@@ -96,11 +93,21 @@
       }
     }
   }
-  
+
   .menu {
-      &__list {
-        flex-direction: column;
+    height: 100%;
+
+    &__list {
+      align-items: center;
+      background: #fff;
+      height: 100%;
+      flex-direction: column;
+      & > li.menu__item {
+        display: flex;
         align-items: center;
+        flex: 1 0 auto; // обнуляем margin именно так
+        margin: 0; // поскольку так определяется корректно элемент
       }
+    }
   }
 }
