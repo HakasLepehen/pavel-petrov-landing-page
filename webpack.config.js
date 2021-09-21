@@ -177,7 +177,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(?:|gif|png|ico|jpg|jpeg|svg)$/,
+        test: /\.(?:|gif|png|ico|jpg|jpeg|svg|webp)$/,
         type: 'asset/resource',
       },
       {
