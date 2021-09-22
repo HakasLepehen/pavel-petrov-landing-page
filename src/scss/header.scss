@@ -45,8 +45,9 @@
 
     &__menu {
       display: none;
-      top: 0;
       position: fixed;
+      // justify-content: start;
+      top: 0;
       left: 0;
       width: 100%;
     }
