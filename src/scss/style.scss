@@ -4,6 +4,7 @@
 @import './greetings.scss';
 @import './experience.scss';
 @import './works.scss';
+@import './continue.scss';
 
 @font-face {
   font-family: 'heeboregular';
@@ -27,7 +28,6 @@
   max-width: 1180px;
   margin: 0 auto;
   overflow: hidden;
-  height: 200vh;
 }
 
 .container {
