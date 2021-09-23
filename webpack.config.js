@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: `./js/${filename(".js")}`,
     path: path.resolve(__dirname, "app"),
-    assetModuleFilename: `[path]${filename(`[ext]`)}`,
+    assetModuleFilename: "[path][name][ext]",
   },
 
   devtool: "inline-source-map",
