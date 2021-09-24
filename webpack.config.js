@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
+const autoprefixer = require('autoprefixer');
 const filename = (ext) =>
   isDev ? `[name]${[ext]}` : `[name].[contenthash]${[ext]}`;
 
@@ -60,6 +61,20 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    autoprefixer(),
+                  ]
+                ],
+                sourceMap: true,
+              }
+            }
+          }
+          
         ],
       },
       {

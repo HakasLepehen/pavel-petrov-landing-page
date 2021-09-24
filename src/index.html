@@ -57,12 +57,16 @@
                 <div class="container">
                     <div class="greeting__block block">
                         <div class="block__img circle">
-                            <img src="./img/avatar.webp" alt="in this place must be my avatar">
+                            <picture>
+                                <source srcset='./img/avatar.webp' type='image/webp'>
+                                <source srcset='./img/avatar.jpeg' type='image/jpeg'>
+                                <img src="./img/avatar.webp" alt="Pavel Petrov photo">
+                            </picture>
                         </div>
                         <div class="block__text">
                             <div class="block__title">
                                 <h1>Hi, I am Pavel,<br>
-                                    Junior Web Developer
+                                    Junior Web Developers
                                 </h1>
                             </div>
                             <div class="block__description">
