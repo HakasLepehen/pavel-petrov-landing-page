@@ -90,10 +90,15 @@
         transform: translateY(-9px) rotate(-45deg);
       }
     }
+    &.menu {
+      display: block;
+    }
   }
 
   .menu {
     height: 100%;
+    display: none;
+
 
     &__list {
       align-items: center;
